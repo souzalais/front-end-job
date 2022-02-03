@@ -7,9 +7,10 @@ Nós não definimos um tempo limite para resolução deste teste, o que vale par
 O desafio
 
 Você deverá copiar clonar a interface do YouTube, sim isso mesmo. Abra o seu YouTube e transcreva isso em código html, css e javascript. Seja criativo, é valido colocar alguns componentes ao seu gosto e também mostrar uma nova ideia de interface para a plataforma.
-	•	Usar um html limpo e não muito verboso
-	•	Pode usar algum framework para o css como bootstrap
-	•	Seja criativo
+
+	• Usar um html limpo e não muito verboso
+	• Pode usar algum framework para o css como bootstrap
+	• Seja criativo
   
 A entrega
 Você deverá mandar um link do seu repositório publico para joaomarcusjesus@gmail.com
