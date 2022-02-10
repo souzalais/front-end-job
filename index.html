@@ -5,8 +5,9 @@
      <!--Google fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.png" /> 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">  
+      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />   
     <title>Youtube UI Clone</title> 
 </head>
 <body>
@@ -14,18 +15,17 @@
     <div class="header">
       <div class="header_left">
           <i id="menu" class="material-icons">menu</i> 
-          <img src="logo.png" alt=""> 
+          <img src="img/logo.png" alt=""> 
       </div>
         <div class="header_search">  
           <form action="">
-            <input type="text" placeholder="Pesquisar">  
+            <input type="text" placeholder="Search">  
             <button>
               <i class="material-icons">search</i> 
             </button>
           </form>
         </div>
-        <div class="header_icons">
-          <i class="material-icons display-this">search</i>
+        <div class="header_icons"> 
           <i class="material-icons">videocam</i>
           <i class="material-icons">apps</i>
           <i class="material-icons">notifications</i>
@@ -37,62 +37,62 @@
     <!--Inicio main body-->
     <div class="mainBody">
       <!--Inicio sidebar-->
-      <div class="sidebar">
+      <div class="sidebar" id="sidebar">
         <div class="sidebar_categories">
           <div class="sidebar_category">
-              <i class="material-icons">home</i> 
-              <span>Início</span>
-          </div>
-            <div class="sidebar_category">
-              <i class="material-icons">explore</i> 
-              <span>Explorar</span> 
+            <i class="material-icons">home</i>
+            <span class="menu-link">Home</span>
           </div>
           <div class="sidebar_category">
-            <i class="material-icons">subscriptions</i>   
-            <span>Inscrições</span>  
-        </div>
-          </div>
-          <hr>
-          <div class="sidebar_categories">
-            <div class="sidebar_category">
-                <i class="material-icons">library_add_check</i> 
-                <span>Biblioteca</span>
-            </div>
-              <div class="sidebar_category">
-                <i class="material-icons">history</i> 
-                <span>Histórico</span>
-            </div>
-            <div class="sidebar_category"> 
-              <i class="material-icons">play_arrow</i>   
-              <span>Seus Vídeos</span> 
+            <i class="material-icons">local_fire_department</i>
+            <span class="menu-link">Trending</span>
           </div>
           <div class="sidebar_category">
-            <i class="material-icons">watch_later</i>   
-            <span>Assistir mais tarde</span> 
+            <i class="material-icons">subscriptions</i>
+            <span class="menu-link">Subscriptions</span>
+          </div>
         </div>
-        <div class="sidebar_category">
-          <i class="material-icons">thumb_up</i>   
-          <span>Marcados como Gostei</span>  
-      </div>
-      </div>
-      <hr>
-      </div>
+        <hr />
+        <div class="sidebar_categories">
+          <div class="sidebar_category">
+            <i class="material-icons">library_add_check</i>
+            <span class="menu-link">Library</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">history</i>
+            <span class="menu-link">History</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">play_arrow</i>
+            <span class="menu-link">Your Videos</span>
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">watch_later</i>
+            <span class="menu-link">Watch Later</span> 
+          </div>
+          <div class="sidebar_category">
+            <i class="material-icons">thumb_up</i>
+            <span class="menu-link">Liked Videos</span>
+          </div>
+        </div>
+        <hr />
+      </div> 
       <!--Sidebar termina-->  
       <div class="videos">
-        <h1>Recomendado</h1>  
+        <h1>Recommended</h1>  
         <div class="videos_container">
           <!--Single video starts-->
           <div class="video">
             <div class="video_thumbnail">
-              <img src="thumbnail1.webp" alt="">
+              <img src="img/thumbnail1.webp" alt="">
             </div>
             <div class="video_details">
               <div class="author">
-                <img src="profile1.jpg" alt="">
+                <img src="img/profile1.jpg" alt="">
               </div>
               <div class="title">
                 <h3>MAQUIANDO CLIENTE - PALPEBRA GORDINHA</h3>
-                <a href="">Tainara Reis</a> 
+                <a href="#">Tainara Reis</a> 
                 <span>49 mil visualizações • há 9 dias</span> 
               </div>
             </div>
@@ -100,16 +100,17 @@
           <!--Single video ends-->
            <!--Single video starts-->
            <div class="video">
+            <a href="" alt="Video sobre blabla"> 
             <div class="video_thumbnail">
-              <img src="thumbnail2.webp" alt="">
+              <img src="img/thumbnail2.webp" alt="">
             </div>
             <div class="video_details">
               <div class="author">
-                <img src="profile2.jpg" alt=""> 
+                <img src="img/profile2.jpg" alt=""> 
               </div>
               <div class="title">
                 <h3>O elogio é CERTO!</h3>
-                <a href="">Luma Servio</a> 
+                <a href="#">Luma Servio</a> 
                 <span>2,4 mil visualizações • há 14 horas</span>
               </div> 
             </div>
@@ -118,15 +119,15 @@
            <!--Single video starts-->
            <div class="video">
             <div class="video_thumbnail">
-              <img src="thumbnail3.jpg" alt="">
+              <img src="img/thumbnail3.jpg" alt="">
             </div>
             <div class="video_details">
               <div class="author">
-                <img src="profile3.jpg" alt="">
+                <img src="img/profile3.jpg" alt="">
               </div>
               <div class="title">
                 <h3>TESTANDO MAKES DA MARÍLIA MENDONÇA BY...</h3>
-                <a href="">Beleza Exterior</a> 
+                <a href="#">Beleza Exterior</a> 
                 <span>58 mil visualizações • há 3 semanas</span> 
               </div>
             </div>
@@ -135,15 +136,15 @@
            <!--Single video starts-->
            <div class="video">
             <div class="video_thumbnail">
-              <img src="thumbnail4.webp" alt="">
+              <img src="img/thumbnail4.webp" alt="">
             </div>
             <div class="video_details">
               <div class="author">
-                <img src="profile4.jpg" alt="">
+                <img src="img/profile4.jpg" alt="">
               </div>
               <div class="title">
                 <h3>LANDING PAGE COM HTML E CSS!</h3>
-                <a href="">Rafaella Ballerini</a> 
+                <a href="#">Rafaella Ballerini</a> 
                 <span>182 mil visualizações • há 1 mês</span>
               </div>
             </div>
@@ -152,15 +153,15 @@
                <!--Single video starts-->
                <div class="video">
                 <div class="video_thumbnail">
-                  <img src="thumbnail5.webp" alt="">
+                  <img src="img/thumbnail5.webp" alt="">
                 </div>
                 <div class="video_details">
                   <div class="author">
-                    <img src="profile5.jpg" alt="">
+                    <img src="img/profile5.jpg" alt="">
                   </div>
                   <div class="title">
                     <h3>Adele - Easy On Me(Live at the NRJ Awards 2021)</h3>
-                    <a href="">Adele</a> 
+                    <a href="#">Adele</a> 
                     <span>57 mi de visualizações • há 2 meses</span>
                   </div>
                 </div>
@@ -169,15 +170,15 @@
                <!--Single video starts-->
                <div class="video">
                 <div class="video_thumbnail">
-                  <img src="thumbnail6.webp" alt="">
+                  <img src="img/thumbnail6.webp" alt="">
                 </div>
                 <div class="video_details">
                   <div class="author">
-                    <img src="profile6.jpg" alt=""> 
+                    <img src="img/profile6.jpg" alt=""> 
                   </div>
                   <div class="title">
                     <h3>MOSTREI O MEU PREFERIDO | SERÁ QUE LÉ...</h3>
-                    <a href="">Lore Improta</a> 
+                    <a href="#">Lore Improta</a> 
                     <span>107 mil visualizações • há 13 dias</span> 
                   </div>
                 </div>
@@ -186,15 +187,15 @@
                <!--Single video starts-->
                <div class="video">
                 <div class="video_thumbnail">
-                  <img src="thumbnail7.webp" alt="">
+                  <img src="img/thumbnail7.webp" alt="">
                 </div>
                 <div class="video_details">
                   <div class="author">
-                    <img src="profile7.jpg" alt="">
+                    <img src="img/profile7.jpg" alt="">
                   </div>
                   <div class="title">
                     <h3>Maroon 5 - Sugar(Official Music Video)</h3>
-                    <a href="">Maroon 5</a> 
+                    <a href="#">Maroon 5</a> 
                     <span>3,6 bi de visualizações • há 7 anos</span> 
                   </div>
                 </div>
@@ -203,15 +204,15 @@
                <!--Single video starts-->
                <div class="video">
                 <div class="video_thumbnail">
-                  <img src="thumbnail8.webp" alt="">
+                  <img src="img/thumbnail8.webp" alt="">
                 </div>
                 <div class="video_details">
                   <div class="author">
-                    <img src="profile8.jpg" alt="">
+                    <img src="img/profile8.jpg" alt="">
                   </div>
                   <div class="title">
                     <h3>Provando o HAMBÚRGUER MAIS FAMOSO DO MUNDO...</h3>
-                    <a href="">Felipe Herrera</a>  
+                    <a href="#">Felipe Herrera</a>  
                     <span>575 mil visualizações • há 1 ano</span> 
                   </div>
                 </div>
@@ -220,15 +221,15 @@
                    <!--Single video starts-->
           <div class="video">
             <div class="video_thumbnail">
-              <img src="thumbnail9.webp" alt="">
+              <img src="img/thumbnail9.webp" alt="">
             </div>
             <div class="video_details">
               <div class="author">
-                <img src="profile9.jpg" alt="">
+                <img src="img/profile9.jpg" alt="">
               </div>
               <div class="title">
                 <h3>Não precisa ter um hidratante para cada...</h3>
-                <a href="">Thaís Nakatu</a> 
+                <a href="#">Thaís Nakatu</a> 
                 <span>5,1 mil visualizações • há 2 dias</span>
               </div>
             </div>
@@ -237,15 +238,15 @@
            <!--Single video starts-->
            <div class="video">
             <div class="video_thumbnail">
-              <img src="thumbnail10.webp" alt="">
+              <img src="img/thumbnail10.webp" alt="">
             </div>
             <div class="video_details">
               <div class="author">
-                <img src="profile10.jpg" alt="">
+                <img src="img/profile10.jpg" alt="">
               </div>
               <div class="title">
                 <h3>CSS Grid Layout e Flexbox - Quando Utilizar</h3>
-                <a href="">Origamid</a> 
+                <a href="#">Origamid</a> 
                 <span>283 mil visualizações • há 2 anos</span> 
               </div>
             </div>
@@ -254,15 +255,15 @@
            <!--Single video starts-->
            <div class="video">
             <div class="video_thumbnail">
-              <img src="thumbnail11.webp" alt="">
+              <img src="img/thumbnail11.webp" alt="">
             </div>
             <div class="video_details">
               <div class="author">
-                <img src="profile11.jpg" alt="">
+                <img src="img/profile11.jpg" alt="">
               </div>
               <div class="title">
                 <h3>MUITO MELHOR QUE PERFUME IMPORTADO</h3>
-                <a href="">Luma Servio</a> 
+                <a href="#">Luma Servio</a> 
                 <span>3 mil visualizações • há 1 dia</span>
               </div> 
             </div>
@@ -271,26 +272,28 @@
            <!--Single video starts-->
            <div class="video">
             <div class="video_thumbnail">
-              <img src="thumbnail12.webp" alt="">
+              <img src="img/thumbnail12.webp" alt="">
             </div>
             <div class="video_details">
               <div class="author">
-                <img src="profile12.jpg" alt="">
+                <img src="img/profile12.jpg" alt="">
               </div>
               <div class="title">
                 <h3>Como personalizar o seu perfil no Github(Readme)</h3>
-                <a href="">Rafaella Ballerini</a> 
-                <span>218 mil visualizações • há 6 meses</span> 
+                <a href="#">Rafaella Ballerini</a> 
+                <span>218 mil visualizações • há 6 meses</span>  
               </div>
-            </div>
-          </div>
+            </div> 
+          </div> 
           <!--Single video ends-->
           
            
         </div>
       </div>
-    </div>
-    <script src="index.js"></script>
+    </div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script> 
     <!--main body termina-->
 </body>
 </html>
